@@ -1,0 +1,19 @@
+columnSuffix: qgtzzgqs
+contentColumnType: string(800)
+fieldGroup: b021ad4a-13e8-45a5-a935-8786e307a963 # Common
+handle: newField
+instructions: 'This is a test field'
+name: 'New Field'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 200
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'Test value...'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

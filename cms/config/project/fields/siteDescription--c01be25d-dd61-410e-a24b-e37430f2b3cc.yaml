@@ -1,0 +1,19 @@
+columnSuffix: hawaubxs
+contentColumnType: text
+fieldGroup: 7c3e3e27-f5af-407c-9328-cf5c9069ca63 # Global Fields
+handle: siteDescription
+instructions: ''
+name: 'Site Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
