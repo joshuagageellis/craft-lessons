@@ -1,0 +1,8 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sections.d6709d54-6517-49bd-aad4-b7a3ffea6ce4:read' # Blog
+  - 'entrytypes.c073b09e-4c2e-469f-8b63-f21783ce7a92:read' # Blog
+  - 'volumes.0e4c59cc-9360-46e6-8803-766dcc8cc6e7:read' # Blog
+  - 'globalsets.5e2c324c-1739-449f-abf9-ca25cc0eef0c:read' # Site Information
+  - 'categorygroups.9db36701-5513-4dd5-82aa-7f4dd7451494:read' # Blog Categories

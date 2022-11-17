@@ -36,7 +36,6 @@ return [
     'disallowRobots' => !$isProd,
 
     // Set Headless. 
-    '*' => [
-        'headless' => true,
-    ],
+    'headless' => true,
+    // 'enableGraphQlCaching' => (bool) getenv('ENABLE_GQL_CACHING'),
 ];

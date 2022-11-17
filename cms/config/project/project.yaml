@@ -1,4 +1,4 @@
-dateModified: 1668545822
+dateModified: 1668703949
 email:
   fromEmail: ellisjoshuag@gmail.com
   fromName: 'Craft Lndo'
@@ -15,6 +15,7 @@ meta:
     9db36701-5513-4dd5-82aa-7f4dd7451494: 'Blog Categories' # Blog Categories
     24efe072-4e97-4a1c-9b76-92de17d6703f: 'Blog Post Fields' # Blog Post Fields
     393d116b-e1e4-47f7-b336-34b0d74d89b1: Text # Text
+    7763a1b8-2069-421d-9464-977940d2e81d: 'Public Schema' # Public Schema
     040309a0-e938-49a8-b5f1-aa73e7f07954: Image # Image
     5233556e-0455-41e8-98f3-2fc9af4975a9: 'New Field' # New Field
     b021ad4a-13e8-45a5-a935-8786e307a963: Common # Common
@@ -31,7 +32,7 @@ plugins:
     enabled: true
     schemaVersion: 2.3.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Craft Lndo'
   schemaVersion: 3.7.33
