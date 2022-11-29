@@ -38,4 +38,10 @@ return [
     // Set Headless. 
     'headless' => true,
     // 'enableGraphQlCaching' => (bool) getenv('ENABLE_GQL_CACHING'),
+
+    // Define aliases.
+    'aliases' => [
+        '@nextjspreview' => App::env('NEXTJS_PREVIEW_URL'),
+        // '@nextjspreviewtoken' => App::env('NEXTJS_PREVIEW_TOKEN'),
+    ],
 ];

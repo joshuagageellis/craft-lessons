@@ -1,8 +1,23 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
-const client = new ApolloClient({
-    uri: "http://craft.lndo.site/gql",
-    cache: new InMemoryCache(),
-});
+/**
+ * Set up Apollo client.
+ * Pass configs if needed.
+ *
+ * @param preview If preview.
+ * @param token Preview token.
+ */
+const setUpClient = (preview: boolean = false, token: string|null|undefined = null) => {
+    let uri = `${process.env.NEXT_PUBLIC_GRAPHQL_URL}`;
 
-export default client;
+    if (preview && token) {
+        uri = `${uri}?token=${token}`;
+    }
+    
+    return new ApolloClient({
+        uri,
+        cache: new InMemoryCache(),
+    });
+};
+
+export default setUpClient;
