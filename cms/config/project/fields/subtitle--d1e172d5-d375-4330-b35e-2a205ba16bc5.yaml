@@ -1,0 +1,19 @@
+columnSuffix: xsqfmoxy
+contentColumnType: text
+fieldGroup: 0929179e-3573-4e88-9e61-2c58661ac88e # General Page Content
+handle: subtitle
+instructions: 'Entry subtitle'
+name: Subtitle
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: Subtitle
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -2,3 +2,6 @@
 /.idea
 /vendor
 .DS_Store
+
+# We dont want to git track images.
+/web/assets/

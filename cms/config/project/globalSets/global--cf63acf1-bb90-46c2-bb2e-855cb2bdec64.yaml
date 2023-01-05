@@ -1,0 +1,36 @@
+fieldLayouts:
+  6ff52905-8d86-4d52-9d32-9218e6c34a4d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a7a62026-47c5-43d0-8147-393db82ccd7e # Site Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 690dfce7-fd0d-4c37-bea1-63fac80df653
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3fc5a8b3-72a0-4015-8413-2bd0e8ce6d74 # Site Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27a80bec-9b14-4ddb-8d47-d13929ffa31f
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Site Settings'
+        uid: 3dd15f0e-da63-4bb3-8fb0-ae8cad5dd099
+        userCondition: null
+handle: global
+name: Global
+sortOrder: 1

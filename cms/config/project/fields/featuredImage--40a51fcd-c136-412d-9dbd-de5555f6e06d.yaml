@@ -1,0 +1,70 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 0929179e-3573-4e88-9e61-2c58661ac88e # General Page Content
+handle: featuredImage
+instructions: 'Entry Image'
+name: 'Featured Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:95372d2f-1b5a-43c6-a57e-7c1ce442cdce' # Entry Images
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maxRelations: 1
+  minRelations: 1
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:95372d2f-1b5a-43c6-a57e-7c1ce442cdce' # Entry Images
+  restrictedLocationSubpath: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\assets\AssetCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\assets\FileSizeConditionRule
+              -
+                - uid
+                - c7be77c3-7dcd-4981-b94c-7504779ffff6
+              -
+                - operator
+                - '<'
+              -
+                - value
+                - '10'
+              -
+                - maxValue
+                - ''
+              -
+                - unit
+                - MB
+  selectionLabel: 'Add featured image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

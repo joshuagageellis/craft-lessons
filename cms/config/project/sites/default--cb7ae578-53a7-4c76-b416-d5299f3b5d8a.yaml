@@ -4,5 +4,5 @@ hasUrls: true
 language: en-US
 name: craft
 primary: true
-siteGroup: 41cbbcca-ac11-4c1a-aea9-d935073bc6b6
+siteGroup: 41cbbcca-ac11-4c1a-aea9-d935073bc6b6 # craft
 sortOrder: 1

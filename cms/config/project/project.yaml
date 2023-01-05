@@ -1,15 +1,48 @@
-dateModified: 1672871113
+dateModified: 1672947450
 email:
   fromEmail: joshua@wideeye.co
   fromName: craft
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/assets/images'
+    type: craft\fs\Local
+    url: /assets/images
+  imagesTransform:
+    hasUrls: true
+    name: 'Images Transform'
+    settings:
+      path: '@webroot/assets/images/transforms'
+    type: craft\fs\Local
+    url: /assets/images/transforms
 meta:
   __names__:
-    41cbbcca-ac11-4c1a-aea9-d935073bc6b6: craft
-    88da389f-c13c-420f-be90-380126f2449d: Common
-    cb7ae578-53a7-4c76-b416-d5299f3b5d8a: craft
+    2dd23fc3-52f5-487b-bbc2-c08f148cca2f: Blog # Blog
+    3fc5a8b3-72a0-4015-8413-2bd0e8ce6d74: 'Site Description' # Site Description
+    7ecd7cd8-4a15-468b-a7f5-bc6a928ac72d: Default # Default
+    40a51fcd-c136-412d-9dbd-de5555f6e06d: 'Featured Image' # Featured Image
+    41cbbcca-ac11-4c1a-aea9-d935073bc6b6: craft # craft
+    88da389f-c13c-420f-be90-380126f2449d: Common # Common
+    845dbe9f-e79d-4f70-953f-ab73a1923cbf: 'Public Schema' # Public Schema
+    868b901b-9b33-4605-8cae-b33085bccc86: Blog # Blog
+    95372d2f-1b5a-43c6-a57e-7c1ce442cdce: 'Entry Images' # Entry Images
+    0929179e-3573-4e88-9e61-2c58661ac88e: 'General Page Content' # General Page Content
+    a7a62026-47c5-43d0-8147-393db82ccd7e: 'Site Title' # Site Title
+    cb7ae578-53a7-4c76-b416-d5299f3b5d8a: craft # craft
+    cf63acf1-bb90-46c2-bb2e-855cb2bdec64: Global # Global
+    d1e172d5-d375-4330-b35e-2a205ba16bc5: Subtitle # Subtitle
+    d4f4e76f-59d1-46f4-9fdd-8d4ae0f5d137: 'Social Image' # Social Image
+    d34b33e5-836a-4dd7-aa46-c9b15ccdf54c: Globals # Globals
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: craft
   schemaVersion: 4.0.0.9
