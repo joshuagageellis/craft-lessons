@@ -12,14 +12,20 @@ use craft\config\GeneralConfig;
 use craft\helpers\App;
 
 return GeneralConfig::create()
-    // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
-    ->defaultWeekStartDay(1)
-    // Prevent generated URLs from including "index.php"
-    ->omitScriptNameInUrls()
-    // Enable Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
-    ->devMode(App::env('DEV_MODE') ?? false)
-    // Allow administrative changes
-    ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?? false)
-    // Disallow robots
-    ->disallowRobots(App::env('DISALLOW_ROBOTS') ?? false)
-;
+	// Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
+	->defaultWeekStartDay( 1 )
+	// Prevent generated URLs from including "index.php"
+	->omitScriptNameInUrls()
+	// Enable Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
+	->devMode( App::env( 'DEV_MODE' ) ?? false )
+	// Allow administrative changes
+	->allowAdminChanges( App::env( 'ALLOW_ADMIN_CHANGES' ) ?? false )
+	// Disallow robots
+	->disallowRobots( App::env( 'DISALLOW_ROBOTS' ) ?? false )
+	// Define Alias.
+	->aliases(
+		array(
+			'@nextjspreview' => App::env( 'NEXTJS_PREVIEW_URL' ),
+		)
+	)
+    ->enableGql( true );

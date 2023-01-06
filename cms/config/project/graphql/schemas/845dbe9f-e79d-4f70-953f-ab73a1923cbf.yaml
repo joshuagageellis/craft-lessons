@@ -4,7 +4,7 @@ scope:
   - 'sites.cb7ae578-53a7-4c76-b416-d5299f3b5d8a:read' # craft
   - 'sections.2dd23fc3-52f5-487b-bbc2-c08f148cca2f:read' # Blog
   - 'entrytypes.7ecd7cd8-4a15-468b-a7f5-bc6a928ac72d:read' # Default
-  - 'sections.9f7e4af5-b4ab-4401-a0df-7a035d5d56b1:read' # Posts
-  - 'entrytypes.d9982a41-9665-4a6c-bafd-0f1643ce36a5:read' # Default
+  - 'sections.9f7e4af5-b4ab-4401-a0df-7a035d5d56b1:read'
+  - 'entrytypes.d9982a41-9665-4a6c-bafd-0f1643ce36a5:read'
   - 'volumes.95372d2f-1b5a-43c6-a57e-7c1ce442cdce:read' # Entry Images
   - 'globalsets.cf63acf1-bb90-46c2-bb2e-855cb2bdec64:read' # Global

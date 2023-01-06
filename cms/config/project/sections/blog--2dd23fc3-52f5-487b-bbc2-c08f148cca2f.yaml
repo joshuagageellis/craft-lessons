@@ -2,6 +2,18 @@ defaultPlacement: end
 enableVersioning: true
 handle: blog
 name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Frontend Preview'
+      -
+        - urlFormat
+        - '{{alias(''@nextjspreview'')}}?id={canonicalId}&uid={uid}&type=blog'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
   cb7ae578-53a7-4c76-b416-d5299f3b5d8a: # craft

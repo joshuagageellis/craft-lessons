@@ -1,15 +1,23 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-const GQL_URL = 'https://craftstarter.lndo.site/api';
-
 /**
- * Set Up Client.
+ * Set up Apollo client.
+ * Pass configs if needed.
+ *
+ * @param preview If preview.
+ * @param token Preview token.
  */
-const setupClient = () => {
-	return new ApolloClient({
-		uri: process.env.NEXT_PUBLIC_GRAPHQL_URL,
-		cache: new InMemoryCache(),
-	});
-}
+ const setUpClient = (preview: boolean = false, token: string|null|undefined = null) => {
+	let uri = `${process.env.NEXT_PUBLIC_GRAPHQL_URL}`;
 
-export default setupClient;
+	if (preview && token) {
+			uri = `${uri}?token=${token}`;
+	}
+	
+	return new ApolloClient({
+			uri,
+			cache: new InMemoryCache(),
+	});
+};
+
+export default setUpClient;

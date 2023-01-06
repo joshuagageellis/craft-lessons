@@ -36,31 +36,36 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-	const client = setupClient();
-
-	let staticProps: any = {};
 	const { all } = context.params;
+	let staticProps: any = {};
+	let client: any = null;
+
+	if (context?.previewData && context.previewData?.canonicalId) {
+		client = setupClient(true, context.previewData?.token);
+	} else {
+		client = setupClient();
+	}
 
 	// Kinda hacky but whatever for now.
-	// We wanna handle both the slug and id.
-	if ( all.length === 1 && !isNaN(parseInt(all[0], 10))) {
-		const { data } = await client.query({
-			query: GET_POST_BY_ID,
-			variables: {
-				id: all[0],
-			},
-		});
-		staticProps = data;
-	} else {
-		const { data } = await client.query({
-			query: GET_POST_BY_SLUG,
-			variables: {
-				slug: all[0],
-			},
-		});
-		staticProps = data;
-	}
-	
+		// We wanna handle both the slug and id.
+		if ( all.length === 1 && !isNaN(parseInt(all[0], 10)) ) {
+			const { data } = await client.query({
+				query: GET_POST_BY_ID,
+				variables: {
+					id: all[0],
+				},
+			});
+			staticProps = data;
+		} else {
+			const { data } = await client.query({
+				query: GET_POST_BY_SLUG,
+				variables: {
+					slug: all[0],
+				},
+			});
+			staticProps = data;
+		}
+
 	return {
 		props: staticProps
 	};
