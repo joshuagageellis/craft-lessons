@@ -23,5 +23,5 @@ NextJS is a fullstack framework, utlizing file based routing, and react. It's a 
 - [Previews](./previews.md)
 
 #### Random Resources:
-https://nystudio107.com/blog/headless-preview-in-craft-cms
-https://nystudio107.com/blog/using-the-craft-cms-graphql-api-on-the-frontend
+- https://nystudio107.com/blog/headless-preview-in-craft-cms
+- https://nystudio107.com/blog/using-the-craft-cms-graphql-api-on-the-frontend
