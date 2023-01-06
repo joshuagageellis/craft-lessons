@@ -233,12 +233,15 @@ type Values<Type> = {
     [Property in keyof Type]?: Type[Property]
 }[]
 
+type SetAttrs = (attributes: { [key: string]: any}) => void;
+
 /**
  * An immutable state update.
  * Accepts an array of objects with a key:value pair from the Link interface.
  */
+type QuickAssign = (values: Values<Link>, attr: Attributes, key: string, cb: SetAttrs) => void;
 
-const quickLinkAssign = (values: Values<Link>, attr: Attributes, key: string, cb: ({}) => void) => {};
+const quickLinkAssign: QuickAssign = (values, attr, key, cb) => {};
 
 // quickLinkAssign([ { url: 'test' } ], { link: {} }, 'link', () => {} );
 ```
