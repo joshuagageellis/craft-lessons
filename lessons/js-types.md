@@ -45,14 +45,14 @@ if(!b) console.log("never runs");// objects are “truthy.“
 const obj = {
 	a: 'test',
 	b: 'test b',
-	b: {
+	c: {
 		a: true,
 	},
 };
 
 console.log(obj?.a); // test
-console.log(obj?.b?.a); // true
-console.log(obj?.c?.a); // undefined
+console.log(obj?.c?.a); // true
+console.log(obj?.c?.b); // undefined
 ```
 
 Applying the optional chain to a primitive type you can check if a prototype method exists on that specific primitive object box.
@@ -212,4 +212,33 @@ class Tesla extends BaseCar implements EVCar {
 
 const tes = new Tesla('t', 200, ['new', 'another'])
 console.log(tes.getNewFeatures());
+```
+
+#### Bonus: Generics and Types from Types
+Using our quicklinks function from starter, which handes an immutable state update on an array of objects.
+
+```ts
+interface Link {
+    url: string;
+    title: string;
+    target: boolean;
+    rel?: boolean;
+}
+
+type Attributes = {
+    [key: string]: any
+}
+
+type Values<Type> = {
+    [Property in keyof Type]?: Type[Property]
+}[]
+
+/**
+ * An immutable state update.
+ * Accepts an array of objects with a key:value pair from the Link interface.
+ */
+
+const quickLinkAssign = (values: Values<Link>, attr: Attributes, key: string, cb: ({}) => void) => {};
+
+// quickLinkAssign([ { url: 'test' } ], { link: {} }, 'link', () => {} );
 ```
