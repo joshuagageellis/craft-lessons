@@ -12,7 +12,7 @@
 In addition, Craft supports a headless approach, and has a [GraphQL API](https://craftcms.com/docs/4.x/graphql.html) that can be used to query content.
 
 ## [NextJS](https://nextjs.org/)
-NextJS is a fullstack framework, utlizing file based routing, react, and supports server side rendering. It's a great framework for building static sites, and is a great fit for Craft CMS.
+NextJS is a fullstack framework, utlizing file based routing, and react. It's a great framework for building static sites and is a great fit for Craft CMS.
 
 # Getting Started w/ Headless
 - [Setting Up Craft CMS](./craft-setup.md)
@@ -20,27 +20,7 @@ NextJS is a fullstack framework, utlizing file based routing, react, and support
 - [Creating Content](./craft-entries-fields.md)
 - [Craft GraphQL API](./craft-graphql.md)
 - [NextJS w/ Apollo GraphQL](./next-apollo-gql.md)
-
-## Next JS
-
-### ENV variables
-
-### Apollo Client
-
-### File Based Routing
-Querying our new Craft entry type
-
-### Basic React Components
-
-### Custom API
-
-### Preview Mode
-
-### Images
-
-## Bonus
-
-### Frontend Submissions to custom API
+- [Previews](./previews.md)
 
 #### Random Resources:
 https://nystudio107.com/blog/headless-preview-in-craft-cms
